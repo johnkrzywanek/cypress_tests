@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add("login", () => {
+
+    cy.fixture('wpe').then((wpe_data) => {
+        cy.log(wpe_data);
+        cy.visit(wpe_data.wpe_url);
+        cy.get('#user_email').type(`${wpe_data.email}{enter}`);
+        cy.get('#user_password').type(`${wpe_data.pass}{enter}`);
+    });
+
+})
