@@ -34,4 +34,12 @@ Cypress.Commands.add("login", () => {
         cy.get('#user_password').type(`${wpe_data.pass}{enter}`);
     });
 
-})
+});
+
+Cypress.Commands.add("closePopupIfVisible", () => {
+    cy.get('#opt-in-modal-title').then(($advert_popup) => {
+        if ($advert_popup.is(':visible')) {
+            cy.get('.opt-in-modal__consent-button').click();
+        }
+    });
+});
