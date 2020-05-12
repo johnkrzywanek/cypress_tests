@@ -1,4 +1,4 @@
-describe('WPE Landing page Test', () => {
+describe('WPE plans page Test', () => {
 
     beforeEach(() => {
         cy.visit('https://wpengine.com');
