@@ -105,3 +105,4 @@ dist
 
 wpe.json
 cypress/integration/examples/
+.DS_Store
