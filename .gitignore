@@ -106,3 +106,4 @@ dist
 wpe.json
 cypress/integration/examples/
 .DS_Store
+__image_snapshots__/

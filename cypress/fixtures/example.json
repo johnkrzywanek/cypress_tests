@@ -1,5 +1,7 @@
 {
   "wpe_url": "https://wpengine.com",
   "email": "test@gmail.com",
-  "pass": "testtesttest"
+  "pass": "testtesttest",
+  "api_url": "https://spm.api.url.com",
+  "api_token": "token"
 }
